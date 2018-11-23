@@ -1,4 +1,5 @@
 Tennis_Windows_x86_64/*
 .ipynb_checkpoints/*
+__pycache__/*
 .idea/*
 *.log
