@@ -37,3 +37,9 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
 
+
+### Repo Structure
+
+- `ddpg_nets.py`: contains Actor Net, and Critic Net. Each net has 5 fully-connected layers.
+- `replay_buffer.py`: has a buffer size of 1e6. At each learning step, agent randomly samples a batch of 512 experiences from the past, and trains the agent based on the sampled experiences.
+- `agent.py`: uses DDPG framework. The agent trains actor and critic 5 times at each step.
